@@ -21,6 +21,7 @@ return require('packer').startup(function(use)
 	})
 
 	use ( 'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+    use("windwp/nvim-autopairs")
 	use ('theprimeagen/harpoon')
 	use ('mbbill/undotree')
 	use ('neovim/nvim-lspconfig')
@@ -33,6 +34,7 @@ return require('packer').startup(function(use)
 	use('L3MON4D3/LuaSnip')
 	use('rafamadriz/friendly-snippets')
 	use ('tpope/vim-fugitive')
+    use ('https://github.com/rstacruz/vim-closer')
 
 	use {
 		'VonHeikemen/lsp-zero.nvim',

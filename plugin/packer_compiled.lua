@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/home/simo/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["nvim-autopairs"] = {
+    loaded = true,
+    path = "/home/simo/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/simo/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -169,6 +174,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/simo/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
+  },
+  ["vim-closer"] = {
+    loaded = true,
+    path = "/home/simo/.local/share/nvim/site/pack/packer/start/vim-closer",
+    url = "https://github.com/rstacruz/vim-closer"
   },
   ["vim-fugitive"] = {
     loaded = true,
