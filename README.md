@@ -8,3 +8,4 @@ install Packer
 
 :lua Colors
 
+npm install -g prettier (<leader>p)
