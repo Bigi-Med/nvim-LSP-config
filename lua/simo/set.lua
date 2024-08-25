@@ -40,3 +40,7 @@ vim.opt.smartindent = true
 vim.opt.scrolloff = 8
 
 vim.opt.updatetime = 50
+
+function setCursor()
+    vim.api.nvim_set_hl(0,"CrusorReset",{fg='white',bg='white'})
+end
