@@ -11,6 +11,18 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 
 vim.opt.scrolloff = 8
+vim.opt.shiftwidth = 0
+vim.opt.expandtab = true
+vim.opt.wrap = true
+vim.opt.clipboard = 'unnamedplus'
+
+vim.opt.smartindent = true
+vim.opt.virtualedit = "block"
+vim.opt.inccommand = "split"
+
+vim.opt.scrolloff = 999
+
+vim.opt.swapfile = false
 
 vim.opt.updatetime = 50
 
