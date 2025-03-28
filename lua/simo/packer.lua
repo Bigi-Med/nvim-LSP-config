@@ -26,11 +26,9 @@ return require('packer').startup(function(use)
     use('windwp/nvim-autopairs')
     use('folke/zen-mode.nvim')
     use('morhetz/gruvbox')
-    use('tribela/transparent.nvim')
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use('theprimeagen/harpoon')
     use('mbbill/undotree')
-    use('neovim/nvim-lspconfig')
     use('jose-elias-alvarez/null-ls.nvim')
     use('MunifTanjim/prettier.nvim')
     use('rafamadriz/friendly-snippets')
@@ -39,12 +37,9 @@ return require('packer').startup(function(use)
     use('https://github.com/rstacruz/vim-closer')
     --completion plugin
     use {
-        'hrsh7th/nvim-cmp',         -- Core completion plugin
-        'hrsh7th/cmp-nvim-lsp',     -- LSP source for nvim-cmp
         'hrsh7th/cmp-buffer',       -- Buffer source for nvim-cmp
         'hrsh7th/cmp-path',         -- Path completion source for nvim-cmp
         'saadparwaiz1/cmp_luasnip', -- Snippet source for nvim-cmp
-        'L3MON4D3/LuaSnip'          -- Snippet engine
     }
     use('onsails/lspkind-nvim')
     -- END
@@ -58,11 +53,12 @@ return require('packer').startup(function(use)
             { 'williamboman/mason-lspconfig.nvim' },
 
             -- LSP Support
-            { 'neovim/nvim-lspconfig' },
+            { 'neovim/nvim-lspconfig' }, --og neovim lsp plugin
             -- Autocompletion
-            { 'hrsh7th/nvim-cmp' },
-            { 'hrsh7th/cmp-nvim-lsp' },
-            { 'L3MON4D3/LuaSnip' },
+            { 'hrsh7th/nvim-cmp' },      --Core completion plugin
+            { 'hrsh7th/cmp-nvim-lsp' },  --LSP source for nvim-cmp
+            { 'L3MON4D3/LuaSnip' },      --Snippet engine
         }
     }
 end)
+
